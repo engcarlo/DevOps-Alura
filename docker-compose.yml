@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  api:
+    # Constrói a imagem a partir do Dockerfile no diretório atual
+    build: .
+    
+    # Define um nome para o contêiner para fácil identificação
+    container_name: api-escolar-2
+    
+    # Mapeia a porta 8000 do host para a porta 8000 do contêiner
+    ports:
+      - "8000:8000"
+    
+    # Monta o diretório atual no diretório /app do contêiner
+    # Isso permite o hot-reloading do código e a persistência do banco de dados SQLite
+    volumes:
+      - .:/app
+  
