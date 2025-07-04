@@ -86,8 +86,3 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 ## Rodando a Aplicação com docker compose
 >> docker compose up
-
-
-
-## PALAVRA-PASSE Certificado
-MARVEL- - 
